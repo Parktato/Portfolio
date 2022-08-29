@@ -1,3 +1,43 @@
-body {
-    color: black;
+nav {
+    position: fixed;
+    left: 0;
+    top: 8rem;
+    height: 20rem;
+    width: 12rem;
+    background-color: beige;
+}
+#navLinks {
+    list-style: none;
+    padding: 0 0 0 0.25rem;
+    font-size: 2rem;
+}
+#navLinks li {
+    padding-bottom: 2rem;
+}
+.content {
+    width: 60%;
+    margin: 0 auto 0;
+}
+#welcomePage p {
+    text-align: right;
+    width: 40%;
+    margin-right: 0;
+    margin-left: 60%;
+    border-bottom: solid blue 0.5rem;
+    border-right: solid blue 0.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+}
+#welcomePage h1 {
+    width: 60%;
+    border-top: solid orange 0.5rem;
+    border-left: solid orange 0.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+}
+#welcomePage {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
