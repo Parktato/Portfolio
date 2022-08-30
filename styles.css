@@ -2,17 +2,48 @@ nav {
     position: fixed;
     left: 0;
     top: 8rem;
-    height: 20rem;
-    width: 12rem;
+    height: 17rem;
+    width: 3.5rem;
     background-color: beige;
+    transition: width 200ms ease;
+}
+nav:hover {
+    width: 14rem;
+}
+nav:hover .navText {
+    display: inline;
 }
 #navLinks {
     list-style: none;
-    padding: 0 0 0 0.25rem;
+    height: 100%;
+    margin: 0;
+    padding: 0;
     font-size: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 #navLinks li {
-    padding-bottom: 2rem;
+    width: 100%;
+}
+.navLink {
+    display: flex;
+    align-items: center;
+    height: 3.5rem;
+}
+#navLinks li i {
+    min-width: 2rem;
+    padding: 0;
+    margin: 0;
+}
+.navText {
+    display: none;
+    white-space: nowrap;
+}
+main {
+    margin-left: 3.5rem;
 }
 .content {
     width: 60%;
