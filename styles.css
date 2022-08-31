@@ -1,6 +1,17 @@
+:root {
+    --background-color: gray;
+    --text-color: black;
+    --navbar-color: beige;
+    --border-color: blue;
+    --nav-icons-color: green;
+    --nav-icons-hover-color: rgb(2, 62, 2);
+    --link-hover-color: red;
+}
 body {
     margin: 0;
     padding: 0;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 nav {
     position: fixed;
@@ -8,10 +19,11 @@ nav {
     top: 8rem;
     height: 17rem;
     width: 3.5rem;
-    background-color: beige;
+    background-color: var(--navbar-color);
     transition: width 200ms ease;
 }
 #navLinks {
+    color: var(--nav-icons-color);
     list-style: none;
     height: 100%;
     margin: 0;
@@ -26,9 +38,15 @@ nav {
     width: 100%;
 }
 .navLink {
+    text-decoration: none;
+    color: var(--nav-icons-color);
     display: flex;
     align-items: center;
     height: 3.5rem;
+    transition: color 150ms;
+}
+.navLink:hover {
+    color: var(--nav-icons-hover-color);
 }
 #navLinks li i {
     max-width: 2rem;
@@ -70,26 +88,26 @@ main {
     width: 60%;
     margin: 0 auto 0;
 }
-#welcomePage p {
-    text-align: right;
-    width: 40%;
-    margin-right: 0;
-    margin-left: 60%;
-    border-bottom: solid blue 0.5rem;
-    border-right: solid blue 0.5rem;
-    padding-bottom: 1.5rem;
-    padding-right: 1.5rem;
-}
-#welcomePage h1 {
-    width: 60%;
-    border-top: solid orange 0.5rem;
-    border-left: solid orange 0.5rem;
-    padding-top: 1.5rem;
-    padding-left: 1.5rem;
-}
 #welcomePage {
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+#welcomePage p {
+    text-align: right;
+    width: 40%;
+    margin-right: 0;
+    margin-left: 60%;
+    border-bottom: solid var(--border-color) 0.5rem;
+    border-right: solid var(--border-color) 0.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.5rem;
+}
+#welcomePage h1 {
+    width: 60%;
+    border-top: solid var(--border-color) 0.5rem;
+    border-left: solid var(--border-color) 0.5rem;
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
 }
