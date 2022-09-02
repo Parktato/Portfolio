@@ -6,6 +6,7 @@
     --nav-icons-color: green;
     --nav-icons-hover-color: rgb(2, 62, 2);
     --link-hover-color: red;
+    scroll-behavior: smooth;
 }
 body {
     margin: 0;
@@ -110,4 +111,31 @@ main {
     border-left: solid var(--border-color) 0.5rem;
     padding-top: 1.5rem;
     padding-left: 1.5rem;
+}
+#projects {
+    height: 100vh;
+}
+#tileContainer {
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.projectTile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 200ms;
+}
+.projectTile img {
+    max-width: 18vw;
+}
+.projectTile p {
+    width: 80%;
+    text-align: justify;
+}
+.projectTile:hover {
+    transform: scale(1.2);
 }
