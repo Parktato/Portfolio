@@ -114,9 +114,12 @@ main {
 }
 #projects {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
 #tileContainer {
-    padding: auto;
     display: flex;
     flex-direction: row;
     width: 100%;
