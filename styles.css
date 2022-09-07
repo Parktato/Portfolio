@@ -142,3 +142,17 @@ main {
 .projectTile:hover {
     transform: scale(1.2);
 }
+#bioContainer {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#bioContainer:first-child {
+    width: 60%;
+}
+#bio {
+
+}
+#headshot {
+    width: 30%;
+}
