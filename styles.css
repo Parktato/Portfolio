@@ -5,8 +5,12 @@
     --border-color: yellow;
     --nav-icons-color: green;
     --nav-icons-hover-color: rgb(2, 62, 2);
-    --link-hover-color: red;
     scroll-behavior: smooth;
+    font-family: "Proza Libre", sans-serif;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 3rem;
 }
 body {
     margin: 0;
@@ -15,6 +19,7 @@ body {
     background-color: var(--background-color);
 }
 nav {
+    font-family: "Montserrat", sans-serif;
     position: fixed;
     left: 0;
     top: 8rem;
@@ -60,7 +65,7 @@ nav {
     margin-left: 1rem;
 }
 nav:hover {
-    width: 13rem;
+    width: 15rem;
 }
 nav:hover .navText {
     animation: fadeIn 200ms;
@@ -83,7 +88,7 @@ nav:hover .navText {
     100% {opacity: 1;}
 }
 main {
-    margin-left: 3.5rem;
+    margin-left: 2rem;
 }
 .content {
     width: 60%;
@@ -96,8 +101,9 @@ main {
     flex-direction: column;
 }
 #welcomePage p {
+    font-size: 1.5rem;
     text-align: right;
-    width: 40%;
+    width: 30rem;
     margin-right: 0;
     margin-left: 60%;
     border-bottom: solid var(--border-color) 0.5rem;
@@ -106,11 +112,16 @@ main {
     padding-right: 1.5rem;
 }
 #welcomePage h1 {
-    width: 60%;
+    width: 30rem;
     border-top: solid var(--border-color) 0.5rem;
     border-left: solid var(--border-color) 0.5rem;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-left: 2rem;
+}
+#im {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 #projects {
     height: 100vh;
@@ -130,10 +141,14 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 80%;
     transition: transform 200ms;
 }
 .projectTile img {
     max-width: 18vw;
+}
+.projectTile h2 {
+    text-align: center;
 }
 .projectTile p {
     width: 80%;
@@ -151,8 +166,8 @@ main {
 #bio h1 {
     border-top: solid var(--border-color) 0.5rem;
     border-left: solid var(--border-color) 0.5rem;
-    width: 15rem;
-    padding-top: 1.5rem;
+    width: 20rem;
+    padding-top: 1rem;
     padding-left: 2rem;
 }
 #bioContainer {
@@ -167,4 +182,35 @@ main {
     width: 40%;
     border: 5px solid black;
     border-radius: 3px;
+}
+#contact {
+    height: 50vh;
+}
+#contact h1 {
+    border-top: solid var(--border-color) 0.5rem;
+    border-left: solid var(--border-color) 0.5rem;
+    width: 28rem;
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+#contact ul {
+    list-style: none;
+    font-size: 1.5rem;
+    width: 30%;
+    margin: 5rem auto;
+}
+#contact ul li {
+    padding: 0.5rem 0;
+    transition: 100ms;
+}
+#contact ul li:hover {
+    transform: translate(15px);
+}
+.contactLinks {
+    text-decoration: none;
+    color: black;
+} 
+footer {
+    text-align: center;
+    padding-top: 5rem;
 }
