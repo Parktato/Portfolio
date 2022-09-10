@@ -1,4 +1,7 @@
 :root {
+    --home-accent-1: blue;
+    --home-accent-2: yellow;
+    --home-accent-3: green;
     --background-color: white;
     --text-color: black;
     --navbar-color: beige;
@@ -8,16 +11,19 @@
     scroll-behavior: smooth;
     font-family: "Proza Libre", sans-serif;
 }
+
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 3rem;
 }
+
 body {
     margin: 0;
     padding: 0;
     color: var(--text-color);
     background-color: var(--background-color);
 }
+
 nav {
     font-family: "Montserrat", sans-serif;
     position: fixed;
@@ -28,6 +34,7 @@ nav {
     background-color: var(--navbar-color);
     transition: width 200ms ease;
 }
+
 #navLinks {
     color: var(--nav-icons-color);
     list-style: none;
@@ -40,9 +47,11 @@ nav {
     align-items: center;
     justify-content: space-around;
 }
+
 #navLinks li {
     width: 100%;
 }
+
 .navLink {
     text-decoration: none;
     color: var(--nav-icons-color);
@@ -51,55 +60,88 @@ nav {
     height: 3.5rem;
     transition: color 150ms;
 }
+
 .navLink:hover {
     color: var(--nav-icons-hover-color);
 }
+
 #navLinks li i {
     max-width: 2rem;
     padding: 0 0.6rem;
     margin: 0;
 }
+
 .navText {
     display: none;
     white-space: nowrap;
     margin-left: 1rem;
 }
+
 nav:hover {
     width: 15rem;
 }
+
 nav:hover .navText {
     animation: fadeIn 200ms;
     display: block;
 }
+
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @-moz-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @-webkit-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 @-o-keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
+
 main {
     margin-left: 2rem;
 }
+
 .content {
     width: 60%;
     margin: 0 auto 0;
 }
+
 #welcomePage {
     height: 100vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+
 #welcomePage p {
     font-size: 1.5rem;
     text-align: right;
@@ -111,6 +153,7 @@ main {
     padding-bottom: 1.5rem;
     padding-right: 1.5rem;
 }
+
 #welcomePage h1 {
     width: 30rem;
     border-top: solid var(--border-color) 0.5rem;
@@ -118,11 +161,13 @@ main {
     padding-top: 1rem;
     padding-left: 2rem;
 }
+
 #im {
     font-size: 2rem;
     margin: 0;
     padding: 0;
 }
+
 #projects {
     height: 100vh;
     display: flex;
@@ -130,6 +175,7 @@ main {
     justify-content: space-around;
     align-items: center;
 }
+
 #tileContainer {
     display: flex;
     flex-direction: row;
@@ -137,6 +183,7 @@ main {
     justify-content: space-around;
     align-items: flex-start;
 }
+
 .projectTile {
     display: flex;
     flex-direction: column;
@@ -144,25 +191,31 @@ main {
     max-height: 80%;
     transition: transform 200ms;
 }
+
 .projectTile img {
     max-width: 18vw;
 }
+
 .projectTile h2 {
     text-align: center;
 }
+
 .projectTile p {
     width: 80%;
     text-align: justify;
 }
+
 .projectTile:hover {
     transform: scale(1.2);
 }
+
 #bio {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 #bio h1 {
     border-top: solid var(--border-color) 0.5rem;
     border-left: solid var(--border-color) 0.5rem;
@@ -170,22 +223,27 @@ main {
     padding-top: 1rem;
     padding-left: 2rem;
 }
+
 #bioContainer {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 #bioParagraph {
     width: 50%;
 }
+
 #headshot {
     width: 40%;
     border: 5px solid black;
     border-radius: 3px;
 }
+
 #contact {
     height: 50vh;
 }
+
 #contact h1 {
     border-top: solid var(--border-color) 0.5rem;
     border-left: solid var(--border-color) 0.5rem;
@@ -193,24 +251,124 @@ main {
     padding-top: 1rem;
     padding-left: 2rem;
 }
+
 #contact ul {
     list-style: none;
     font-size: 1.5rem;
     width: 30%;
     margin: 5rem auto;
 }
+
 #contact ul li {
     padding: 0.5rem 0;
     transition: 100ms;
 }
+
 #contact ul li:hover {
     transform: translate(15px);
 }
+
 .contactLinks {
     text-decoration: none;
     color: black;
-} 
+}
+
 footer {
     text-align: center;
     padding-top: 5rem;
+}
+
+@media screen and (max-width: 767px) {
+    nav {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        bottom: 0;
+        top: calc(100vh - 5rem);
+        height: 5rem;
+        width: 100vw;
+        transition: none;
+    }
+    #navLinks {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #navLinks li {
+        height: 100%;
+        width: auto;
+    }
+    .navLink {
+        display: flex;
+        align-items: center;
+        height: 3.5rem;
+        transition: color 150ms;
+    }
+    .navLink:active {
+        color: var(--nav-icons-hover-color);
+    }
+    #navLinks li i {
+        max-height: 5rem;
+        padding: 0;
+        margin: 0;
+    }
+    .navText {
+        display: none;
+        white-space: nowrap;
+        margin-left: 0;
+    }
+    nav:hover {
+        width: 100vw;
+    }
+    nav:hover .navText {
+        animation: none;
+        display: none;
+    }
+    main {
+        margin: 0 0 5rem 0;
+    }
+    
+    .content {
+        width: 100vw;
+        margin: 0;
+    }
+    #welcomePage {
+        height: calc(100vh - 5rem);
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #welcomePage h1 {
+        width: 80%;
+        border-top: none;
+        border-left: none;
+        padding: 0;
+        margin: 0 0 2rem 0;
+        text-shadow: 2px 2px 4px var(--home-accent-2);
+    }
+    #im {
+        font-size: 2rem;
+        margin: 0;
+        padding: 0.5rem;
+        background-color: var(--home-accent-1);
+        text-shadow: none;
+        border-radius: 25px;
+    }
+    #welcomePage p {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 80%;
+        margin: 0;
+        padding: 0;
+        border-bottom: none;
+        border-right: none;
+        text-shadow: 1px 1px 2px var(--home-accent-3);
+    }
 }
