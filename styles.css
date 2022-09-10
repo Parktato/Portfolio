@@ -2,7 +2,7 @@
     --background-color: white;
     --text-color: black;
     --navbar-color: beige;
-    --border-color: blue;
+    --border-color: yellow;
     --nav-icons-color: green;
     --nav-icons-hover-color: rgb(2, 62, 2);
     --link-hover-color: red;
@@ -110,7 +110,7 @@ main {
     border-top: solid var(--border-color) 0.5rem;
     border-left: solid var(--border-color) 0.5rem;
     padding-top: 1.5rem;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
 }
 #projects {
     height: 100vh;
@@ -142,17 +142,29 @@ main {
 .projectTile:hover {
     transform: scale(1.2);
 }
+#bio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#bio h1 {
+    border-top: solid var(--border-color) 0.5rem;
+    border-left: solid var(--border-color) 0.5rem;
+    width: 15rem;
+    padding-top: 1.5rem;
+    padding-left: 2rem;
+}
 #bioContainer {
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
 }
-#bioContainer:first-child {
-    width: 60%;
-}
-#bio {
-
+#bioParagraph {
+    width: 50%;
 }
 #headshot {
-    width: 30%;
+    width: 40%;
+    border: 5px solid black;
+    border-radius: 3px;
 }
