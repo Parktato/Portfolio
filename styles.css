@@ -194,6 +194,8 @@ main {
 
 .projectTile img {
     max-width: 18vw;
+    border: 3px solid black;
+    border-radius: 4px;
 }
 
 .projectTile h2 {
@@ -237,7 +239,7 @@ main {
 #headshot {
     width: 40%;
     border: 5px solid black;
-    border-radius: 3px;
+    border-radius: 4px;
 }
 
 #contact {
@@ -377,11 +379,62 @@ footer {
     #welcomePage p {
         font-size: 1.5rem;
         text-align: center;
-        width: 80%;
+        width: 90%;
         margin: 0;
         padding: 0;
         border-bottom: none;
         border-right: none;
         text-shadow: 1px 1px 2px var(--home-accent-3);
+    }
+    #projects {
+        width: 100vw;
+        display: block;
+        height: auto;
+    }
+    
+    #tileContainer {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+    
+    .projectTile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        max-height: auto;
+        transition: none;
+        padding-bottom: 5rem;
+    }
+
+    .projectTile a {
+        width: 90%;
+    }
+    
+    .projectTile a img {
+        max-width: 100%;
+    }
+    
+    .projectTile h2 {
+        text-align: center;
+        padding: 0;
+        margin: 1rem 0;
+    }
+    
+    .projectTile p {
+        width: 90%;
+        text-align: justify;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .projectTile:hover {
+        transform: none;
     }
 }
