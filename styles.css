@@ -1,7 +1,7 @@
 :root {
     --home-accent-1: blue;
     --home-accent-2: yellow;
-    --home-accent-3: green;
+    --home-accent-3: rgb(178, 232, 178);
     --background-color: white;
     --text-color: black;
     --link-color: green;
@@ -171,6 +171,7 @@ main {
 
 #projects {
     height: 100vh;
+    max-width: calc(100vw - 15rem);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -209,7 +210,7 @@ main {
 }
 
 .projectTile:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 #bio {
@@ -363,7 +364,7 @@ footer {
     }
 
     #welcomePage {
-        height: calc(100vh - 5rem);
+        height: calc(100vh - 4.8rem);
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -394,14 +395,16 @@ footer {
         text-align: center;
         width: 90%;
         margin: 0;
-        padding: 0;
+        padding: 0.5rem;
         border-bottom: none;
         border-right: none;
-        text-shadow: 1px 1px 2px var(--home-accent-3);
+        background-color: var(--home-accent-3);
+        border-radius: 30px;
     }
 
     #projects {
         width: 100%;
+        max-width: 100%;
         display: block;
         height: auto;
     }
