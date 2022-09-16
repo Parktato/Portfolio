@@ -236,6 +236,7 @@ main {
 
 #bioParagraph {
     width: 50%;
+    text-align: justify;
 }
 
 #resumeLink {
@@ -279,7 +280,7 @@ main {
 
 .contactLinks {
     text-decoration: none;
-    color: black;
+    color: var(--text-color);
 }
 
 footer {
