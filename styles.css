@@ -1,14 +1,13 @@
 :root {
-    --home-accent-1: blue;
-    --home-accent-2: yellow;
-    --home-accent-3: rgb(178, 232, 178);
+    --home-accent-1: #9A89E6;
+    --home-accent-2: #EFCB68;
+    --home-accent-3: #DEF6CA;
     --background-color: white;
     --text-color: black;
-    --link-color: green;
-    --navbar-color: beige;
-    --border-color: yellow;
-    --nav-icons-color: green;
-    --nav-icons-hover-color: rgb(2, 62, 2);
+    --link-color: var(--nav-icons-color);
+    --navbar-color: var(--home-accent-3);
+    --nav-icons-color: #254441;
+    --nav-icons-hover-color: #4F928B;
     scroll-behavior: smooth;
     font-family: "Proza Libre", sans-serif;
 }
@@ -149,16 +148,18 @@ main {
     text-align: right;
     width: 30rem;
     margin-left: calc(100% - 30rem);
-    border-bottom: solid var(--border-color) 0.5rem;
-    border-right: solid var(--border-color) 0.5rem;
+    border-bottom: solid var(--home-accent-1) 0.5rem;
+    border-right: solid var(--home-accent-1) 0.5rem;
+    text-shadow: 2px 2px 4px var(--home-accent-3);
     padding-bottom: 1.5rem;
     padding-right: 1.5rem;
 }
 
 #welcomePage h1 {
     width: 30rem;
-    border-top: solid var(--border-color) 0.5rem;
-    border-left: solid var(--border-color) 0.5rem;
+    border-top: solid var(--home-accent-1) 0.5rem;
+    border-left: solid var(--home-accent-1) 0.5rem;
+    text-shadow: 2px 2px 4px var(--home-accent-3);
     padding-top: 1rem;
     padding-left: 2rem;
 }
@@ -206,7 +207,7 @@ main {
 
 .projectTile p {
     width: 80%;
-    text-align: justify;
+    text-align: center;
 }
 
 .projectTile:hover {
@@ -221,8 +222,8 @@ main {
 }
 
 #bio h1 {
-    border-top: solid var(--border-color) 0.5rem;
-    border-left: solid var(--border-color) 0.5rem;
+    border-top: solid var(--home-accent-1) 0.5rem;
+    border-left: solid var(--home-accent-1) 0.5rem;
     width: 20rem;
     padding-top: 1rem;
     padding-left: 2rem;
@@ -255,8 +256,8 @@ main {
 }
 
 #contact h1 {
-    border-top: solid var(--border-color) 0.5rem;
-    border-left: solid var(--border-color) 0.5rem;
+    border-top: solid var(--home-accent-1) 0.5rem;
+    border-left: solid var(--home-accent-1) 0.5rem;
     width: 28rem;
     padding-top: 1rem;
     padding-left: 2rem;
@@ -288,7 +289,7 @@ footer {
     padding-top: 5rem;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     nav {
         position: fixed;
         margin: 0;
@@ -456,12 +457,13 @@ footer {
         transform: none;
     }
     #bio {
-        max-height: 100vh;
+        height: auto;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        padding-bottom: 2rem;
     }
     
     #bio h1 {
@@ -500,7 +502,7 @@ footer {
         border-top: none;
         border-left: none;
         width: 80%;
-        padding: 1rem 0 0 2rem;
+        padding: 1rem 0 0 10%;
         margin: 0;
         text-shadow: 2px 2px 4px var(--home-accent-2);
     }
