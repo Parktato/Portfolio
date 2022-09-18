@@ -1,5 +1,5 @@
 :root {
-    --home-accent-1: #9A89E6;
+    --home-accent-1: #9a89e6;
     --home-accent-2: #EFCB68;
     --home-accent-3: #DEF6CA;
     --background-color: white;
@@ -7,7 +7,7 @@
     --link-color: var(--nav-icons-color);
     --navbar-color: var(--home-accent-3);
     --nav-icons-color: #254441;
-    --nav-icons-hover-color: #4F928B;
+    --nav-icons-hover-color: #4f928b;
     scroll-behavior: smooth;
     font-family: "Proza Libre", sans-serif;
 }
