@@ -295,7 +295,7 @@ footer {
         margin: 0;
         padding: 0;
         bottom: 0;
-        top: calc(100vh - 4.9rem);
+        top: calc(100% - 4.9rem);
         height: 5rem;
         width: 100%;
         transition: none;
