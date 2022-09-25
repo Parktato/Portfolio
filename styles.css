@@ -243,6 +243,9 @@ main {
 #resumeLink {
     text-decoration: none;
     color: var(--link-color);
+    background-color: var(--home-accent-3);
+    padding: 2px 4px;
+    border-radius: 3px;
 }
 
 #headshot {
